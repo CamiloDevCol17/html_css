@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios con html</title>
+    <style>
+        body{
+            background: #e3e3e3;
+        }
+        a{
+            font-size: 20px;
+            color: red;
+            font-weight: 500px;
+            text-decoration: none;
+        }
+        h1{
+            text-align: center;
+        }
+        form{
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid green;
+        }
+        div{
+            padding: 20px;
+        }
+    
+
+    </style>
+</head>
+<body>
+    <a href="index.html">Volver</a>
+    <h1>Formulario de registro</h1>
+    <main>
+        <form action="index.html" accept-charset="UTF-8" >
+            <div>
+                <label  for="">Ingresa su nombre completo: </label>
+                <input placeholder="John Doe" type="text" name="nombre" id="nombre" required>
+            </div>
+            <div>
+                <label for="">Ingresa su fecha de nacimiento: </label>
+                <input  type="date" name="fecha_nacimiento" required id="fecha_nacimiento">
+            </div>
+            <fieldset>
+                <legend>Dattos de seguridad</legend>
+                <div>
+                    <label for="usuarios">Ingresa su usuario: </label>
+                    <input type="text" name="usuario" id="usuarios" placeholder="Usuario123.*" required>
+                </div>
+                <div>
+                    <label for="password">Ingress su contraseña: </label>
+                    <input type="password" name="password" id="password">
+                </div>
+                <div><label for="color" name="color">Color favorito</label><input type="color" name="color" id="color"></div>
+                <div>
+                    <label for="pais">Pais</label>
+                    <select name="pais" id="pais">
+                        <option value="co">Colombia</option>
+                        <option value="mx">Mexico</option>
+                        <option value="ar">Argentina</option>
+                        <option value="ee.uu">EE.UU</option>
+                    </select>
+                </div>
+                <div><label for="genero">Genero</label><input type="radio" name="genero" value="1">Hombre</input><input type="radio" name="genero" value="2">Mujer</input><input type="radio" name="genero" value="3">Otro</input></div>
+                <div>
+                    <p name="descripcion">Descripcion</p>
+                    <textarea name="descripcion" id="descripcion" cols="30" rows="10"></textarea>
+                </div>
+                <div><p>Nivel de ingles: </p><input type="range" min="0" max="10"><p>Ingresa su edad</p><input type="number" name="" id=""><p>Ingresa su correo electronico: </p><input type="email" name="" id="" required="required"></div>
+            </fieldset>
+            <button type="submit">Enviar</button>
+
+        </form>
+    </main>
+</body>
+</html>
